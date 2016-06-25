@@ -28,7 +28,6 @@ Library
   Build-Depends:     base >= 3 && < 5
   Exposed-modules:   Data.Stream
                      Data.List.Stream
-                     Control.Monad.Stream
   Extensions:        CPP, BangPatterns, ExistentialQuantification, MagicHash, TypeOperators
   cpp-options:       -DEXTERNAL_PACKAGE
   ghc-options:       -Odph
