@@ -33,7 +33,7 @@ module Control.Monad.Stream
 
     , mapM          -- :: (Monad m) => (a -> m b) -> [a] -> m [b]
     , mapM_         -- :: (Monad m) => (a -> m b) -> [a] -> m ()
---     , forM          -- :: (Monad m) => [a] -> (a -> m b) -> m [b]
+    , forM          -- :: (Monad m) => [a] -> (a -> m b) -> m [b]
     , forM_         -- :: (Monad m) => [a] -> (a -> m b) -> m ()
     , sequence      -- :: (Monad m) => [m a] -> m [a]
     , sequence_     -- :: (Monad m) => [m a] -> m ()
@@ -44,7 +44,7 @@ module Control.Monad.Stream
 
     -- ** Generalisations of list functions
 
---     , join          -- :: (Monad m) => m (m a) -> m a
+    , join          -- :: (Monad m) => m (m a) -> m a
     , msum          -- :: (MonadPlus m) => [m a] -> m a
     , filterM       -- :: (Monad m) => (a -> m Bool) -> [a] -> m [a]
     , mapAndUnzipM  -- :: (Monad m) => (a -> m (b,c)) -> [a] -> m ([b], [c])
@@ -58,7 +58,7 @@ module Control.Monad.Stream
     -- ** Conditional execution of monadic expressions
 
     , guard         -- :: (MonadPlus m) => Bool -> m ()
---     , when          -- :: (Monad m) => Bool -> m () -> m ()
+    , when          -- :: (Monad m) => Bool -> m () -> m ()
     , unless        -- :: (Monad m) => Bool -> m () -> m ()
 
     -- ** Monadic lifting operators
